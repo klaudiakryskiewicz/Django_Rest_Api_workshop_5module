@@ -17,8 +17,7 @@ from django.contrib import admin
 from django.urls import path
 
 from movielist.views import MovieListView, MovieView
-from showtimes.views import CinemaView, CinemaListView
-
+from showtimes.views import CinemaView, CinemaListView, ScreeningListView, ScreeningView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -26,4 +25,6 @@ urlpatterns = [
     path('movies/<int:pk>/', MovieView.as_view(), name='movies-detail'),
     path('cinemas/', CinemaListView.as_view(), name='cinemas'),
     path('cinemas/<int:pk>/', CinemaView.as_view(), name='cinemas-detail'),
+    path('screenings/', ScreeningListView.as_view(), name='screenings'),
+    path('screenings/<int:pk>/', ScreeningView.as_view(), name='screenings-detail'),
 ]
