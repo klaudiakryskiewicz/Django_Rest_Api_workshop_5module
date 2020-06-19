@@ -1,0 +1,30 @@
+---
+exercises:
+  01_Przygotowanie projektu:
+    max_points: 0
+    disabled: true
+  02_Nowa aplikacja:
+    max_points: 0
+    disabled: true
+  03_Modele:
+    max_points: 0
+    disabled: true
+  04_Serializator kina:
+    max_points: 0
+    disabled: true
+  05_Widoki kina:
+    max_points: 0
+    disabled: true
+  06_Serializator seansu:
+    max_points: 0
+    disabled: true
+  07_Widoki seansu:
+    max_points: 0
+    disabled: true
+  "08_Filtrowanie film\xF3w - zadanie dodatkowe":
+    max_points: 0
+    disabled: true
+  "09_Wyszukiwanie seans\xF3w - zadanie dodatkowe":
+    max_points: 0
+    disabled: true
+...
