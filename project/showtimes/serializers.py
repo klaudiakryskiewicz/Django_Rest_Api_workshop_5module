@@ -10,11 +10,11 @@ class CinemaSerializer(serializers.ModelSerializer):
         model = Cinema
         fields = ("name", "city", "movies")
 
+
 class ScreeningSerializer(serializers.ModelSerializer):
-    cinemas = serializers.SlugRelatedField(slug_field='name', queryset=Cinema.objects.all())
-    movies = serializers.SlugRelatedField(slug_field='title', queryset=Movie.objects.all())
+    cinema = serializers.SlugRelatedField(slug_field='name', queryset=Cinema.objects.all())
+    movie = serializers.SlugRelatedField(slug_field='title', queryset=Movie.objects.all())
 
     class Meta:
         model = Screening
         fields = ("movie", "cinema", "date")
-
